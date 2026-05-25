@@ -34,11 +34,11 @@ The dataset contains **1,898 orders** across **9 columns**, with no missing valu
 
 ## Approach
 
-1. **Data understanding** — shape, data types, and missing-value checks.
-2. **Univariate analysis** — distributions of numeric and categorical fields using histograms, box plots, and count plots (including a custom `histogram_boxplot` helper that stacks a box plot over a histogram with mean/median markers).
-3. **Bivariate & multivariate analysis** — relationships between cost, preparation time, delivery time, cuisine, rating, and day of week (correlation heatmap, grouped aggregates).
-4. **Business questions** — demand concentration, cuisine popularity, rating behaviour, and delivery efficiency.
-5. **Conclusions & recommendations** — translating insights into actions.
+1. **Data understanding:** shape, data types, and missing-value checks.
+2. **Univariate analysis:** distributions of numeric and categorical fields using histograms, box plots, and count plots (including a custom `histogram_boxplot` helper that stacks a box plot over a histogram with mean/median markers).
+3. **Bivariate & multivariate analysis:** relationships between cost, preparation time, delivery time, cuisine, rating, and day of week (correlation heatmap, grouped aggregates).
+4. **Business questions:** demand concentration, cuisine popularity, rating behaviour, and delivery efficiency.
+5. **Conclusions & recommendations:** translating insights into actions.
 
 ## Key Findings
 
@@ -58,41 +58,6 @@ The dataset contains **1,898 orders** across **9 columns**, with no missing valu
 - Encourage ratings via small incentives (coupons, loyalty points) to collect more feedback.
 - Strengthen partnerships with popular cuisines (American, Japanese) while supporting lower-performing restaurants with promotions.
 - Introduce loyalty programs to improve retention and repeat orders.
-
-## Repository Structure
-
-```
-foodhub-analytics/
-├── README.md
-├── requirements.txt
-├── .gitignore
-├── assets/
-│   └── cover.png
-├── data/
-│   └── FoodHub_Order.csv          # not committed (see .gitignore)
-├── notebooks/
-│   └── foodhub_analysis.ipynb
-└── reports/
-    └── foodhub_analysis.html       # exported notebook
-```
-
-## Getting Started
-
-```bash
-# clone
-git clone https://github.com/<your-username>/foodhub-analytics.git
-cd foodhub-analytics
-
-# (optional) create a virtual environment
-python -m venv .venv
-source .venv/bin/activate        # Windows: .venv\Scripts\activate
-
-# install dependencies
-pip install -r requirements.txt
-
-# launch the notebook
-jupyter notebook notebooks/foodhub_analysis.ipynb
-```
 
 ## Tech Stack
 
